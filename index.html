@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles_keyboard.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Puk Typer</title>
+</head>
+
+<body>
+    <img src="puk2.png" alt="logo" id="logo">
+    <div id="controls">
+        <table id="user-data">
+            <tr>
+                <td class="user-data">
+                    <p class="control-data control-data-big" id="speed">Average typing speed: 0 WPM</p>
+                </td>
+                <!-- <td class="user-data">
+                    <p class="control-data" id="accuracy">Incorrect keystrokes: 0</p>
+                </td> -->
+            </tr>
+        </table>
+        <div id="settings">
+            <label for="time-limit" class="control-data controls" id="set-time">Set time limit: </label>
+            <select id="time-limit" name="time" class="control-data controls">
+                    <option value="1">1 Minute</option>
+                    <option value="2">2 Minutes</option>
+                    <option value="3">3 Minutes</option>
+                    <option value="5">5 Minutes</option>
+                </select>
+
+            <br>
+            <button class="start-btn control-data">Start</button></td>
+
+
+        </div>
+
+        <p class="control-data" id="time-remaining">Time: 0:00</p>
+    </div>
+
+    <div id="display" class="hide-item">
+        <div>
+            <table id="input">
+                <tr class="input-row-1">
+                    <td class="letter" id="col1-let1"></td>
+                    <td class="letter" id="col1-let2"></td>
+                    <td class="letter" id="col1-let3"></td>
+                    <td class="letter" id="col1-let4"></td>
+                    <td class="letter" id="col1-let5"></td>
+                    <td class="letter" id="col1-let6"></td>
+                    <td class="letter" id="col1-let7"></td>
+                    <td class="letter" id="col1-let8"></td>
+                    <td class="letter" id="col1-let9"></td>
+                    <td class="letter" id="col1-let10"></td>
+                    <td class="letter" id="col1-let11"></td>
+                    <td class="letter" id="col1-let12"></td>
+                    <td class="letter" id="col1-let13"></td>
+                    <td class="letter" id="col1-let14"></td>
+                    <td class="letter" id="col1-let15"></td>
+                    <td class="letter" id="col1-let16"></td>
+                    <td class="letter" id="col1-let17"></td>
+                    <td class="letter" id="col1-let18"></td>
+                    <td class="letter" id="col1-let19"></td>
+                    <td class="letter" id="col1-let20"></td>
+                    <td class="letter" id="col1-let21"></td>
+                    <td class="letter" id="col1-let22"></td>
+                    <td class="letter" id="col1-let23"></td>
+                    <td class="letter" id="col1-let24"></td>
+                    <td class="letter" id="col1-let25"></td>
+                    <td class="letter" id="col1-let26"></td>
+                    <td class="letter" id="col1-let27"></td>
+                    <td class="letter" id="col1-let28"></td>
+                    <td class="letter" id="col1-let29"></td>
+                    <td class="letter" id="col1-let30"></td>
+                    <td class="letter" id="col1-let31"></td>
+                    <td class="letter" id="col1-let32"></td>
+                    <td class="letter" id="col1-let33"></td>
+                    <td class="letter" id="col1-let34"></td>
+                    <td class="letter" id="col1-let35"></td>
+                    <td class="letter" id="col1-let36"></td>
+                    <td class="letter" id="col1-let37"></td>
+                    <td class="letter" id="col1-let38"></td>
+                    <td class="letter" id="col1-let39"></td>
+                    <td class="letter" id="col1-let40"></td>
+                    <td class="letter" id="col1-let41"></td>
+                    <td class="letter" id="col1-let42"></td>
+                    <td class="letter" id="col1-let43"></td>
+                    <td class="letter" id="col1-let44"></td>
+                    <td class="letter" id="col1-let45"></td>
+                    <td class="letter" id="col1-let46"></td>
+                    <td class="letter" id="col1-let47"></td>
+                    <td class="letter" id="col1-let48"></td>
+                    <td class="letter" id="col1-let49"></td>
+                    <td class="letter" id="col1-let50"></td>
+                </tr>
+
+                <!-- <tr class="input-row-2">
+                    <td class="letter" id="col2-let2">1</td>
+                    <td class="letter" id="col2-let1">1</td>
+                    <td class="letter" id="col2-let3">1</td>
+                    <td class="letter" id="col2-let4">1</td>
+                    <td class="letter" id="col2-let5">1</td>
+                    <td class="letter" id="col2-let6">1</td>
+                    <td class="letter" id="col2-let7">1</td>
+                    <td class="letter" id="col2-let8">1</td>
+                    <td class="letter" id="col2-let9">1</td>
+                    <td class="letter" id="col2-let10">1</td>
+                    <td class="letter" id="col2-let11">1</td>
+                    <td class="letter" id="col2-let12">1</td>
+                    <td class="letter" id="col2-let13">1</td>
+                    <td class="letter" id="col2-let14">1</td>
+                    <td class="letter" id="col2-let15">1</td>
+                    <td class="letter" id="col2-let16">1</td>
+                    <td class="letter" id="col2-let17">1</td>
+                    <td class="letter" id="col2-let18">1</td>
+                    <td class="letter" id="col2-let19">1</td>
+                    <td class="letter" id="col2-let20">1</td>
+                    <td class="letter" id="col2-let21">1</td>
+                    <td class="letter" id="col2-let22">1</td>
+                    <td class="letter" id="col2-let23">1</td>
+                    <td class="letter" id="col2-let24">1</td>
+                    <td class="letter" id="col2-let25">1</td>
+                    <td class="letter" id="col2-let26">1</td>
+                    <td class="letter" id="col2-let27">1</td>
+                    <td class="letter" id="col2-let28">1</td>
+                    <td class="letter" id="col2-let29">1</td>
+                    <td class="letter" id="col2-let30">1</td>
+                    <td class="letter" id="col2-let31">1</td>
+                    <td class="letter" id="col2-let32">1</td>
+                    <td class="letter" id="col2-let33">1</td>
+                    <td class="letter" id="col2-let34">1</td>
+                    <td class="letter" id="col2-let35">1</td>
+                    <td class="letter" id="col2-let36">1</td>
+                    <td class="letter" id="col2-let37">1</td>
+                    <td class="letter" id="col2-let38">1</td>
+                    <td class="letter" id="col2-let39">1</td>
+                    <td class="letter" id="col2-let40">1</td> -->
+                <!-- <td class="letter" id="col2-let41">1</td>
+                    <td class="letter" id="col2-let42">1</td>
+                    <td class="letter" id="col2-let43">1</td>
+                    <td class="letter" id="col2-let44">1</td>
+                    <td class="letter" id="col2-let45">1</td>
+                    <td class="letter" id="col2-let46">1</td>
+                    <td class="letter" id="col2-let47">1</td>
+                    <td class="letter" id="col2-let48">1</td>
+                    <td class="letter" id="col2-let49">1</td>
+                    <td class="letter" id="col2-let50">1</td> -->
+                <!-- </tr>
+
+                <tr class="input-row-1">
+                    <td class="letter" id="col3-let1">1</td>
+                    <td class="letter" id="col3-let2">1</td>
+                    <td class="letter" id="col3-let3">1</td>
+                    <td class="letter" id="col3-let4">1</td>
+                    <td class="letter" id="col3-let5">1</td>
+                    <td class="letter" id="col3-let6">1</td>
+                    <td class="letter" id="col3-let7">1</td>
+                    <td class="letter" id="col3-let8">1</td>
+                    <td class="letter" id="col3-let9">1</td>
+                    <td class="letter" id="col3-let10">1</td>
+                    <td class="letter" id="col3-let11">1</td>
+                    <td class="letter" id="col3-let12">1</td>
+                    <td class="letter" id="col3-let13">1</td>
+                    <td class="letter" id="col3-let14">1</td>
+                    <td class="letter" id="col3-let15">1</td>
+                    <td class="letter" id="col3-let16">1</td>
+                    <td class="letter" id="col3-let17">1</td>
+                    <td class="letter" id="col3-let18">1</td>
+                    <td class="letter" id="col3-let19">1</td>
+                    <td class="letter" id="col3-let20">1</td>
+                    <td class="letter" id="col3-let21">1</td>
+                    <td class="letter" id="col3-let22">1</td>
+                    <td class="letter" id="col3-let23">1</td>
+                    <td class="letter" id="col3-let24">1</td>
+                    <td class="letter" id="col3-let25">1</td>
+                    <td class="letter" id="col3-let26">1</td>
+                    <td class="letter" id="col3-let27">1</td>
+                    <td class="letter" id="col3-let28">1</td>
+                    <td class="letter" id="col3-let29">1</td>
+                    <td class="letter" id="col3-let30">1</td>
+                    <td class="letter" id="col3-let31">1</td>
+                    <td class="letter" id="col3-let32">1</td>
+                    <td class="letter" id="col3-let33">1</td>
+                    <td class="letter" id="col3-let34">1</td>
+                    <td class="letter" id="col3-let35">1</td>
+                    <td class="letter" id="col3-let36">1</td>
+                    <td class="letter" id="col3-let37">1</td>
+                    <td class="letter" id="col3-let38">1</td>
+                    <td class="letter" id="col3-let39">1</td>
+                    <td class="letter" id="col3-let40">1</td> -->
+                <!-- <td class="letter" id="col3-let41">1</td>
+                    <td class="letter" id="col3-let42">1</td>
+                    <td class="letter" id="col3-let43">1</td>
+                    <td class="letter" id="col3-let44">1</td>
+                    <td class="letter" id="col3-let45">1</td>
+                    <td class="letter" id="col3-let46">1</td>
+                    <td class="letter" id="col3-let47">1</td>
+                    <td class="letter" id="col3-let48">1</td>
+                    <td class="letter" id="col3-let49">1</td>
+                    <td class="letter" id="col3-let50">1</td> -->
+                <!-- </tr>
+
+                <tr class="input-row-1">
+                    <td class="letter" id="col4-let1">1</td>
+                    <td class="letter" id="col4-let2">1</td>
+                    <td class="letter" id="col4-let3">1</td>
+                    <td class="letter" id="col4-let4">1</td>
+                    <td class="letter" id="col4-let5">1</td>
+                    <td class="letter" id="col4-let6">1</td>
+                    <td class="letter" id="col4-let7">1</td>
+                    <td class="letter" id="col4-let8">1</td>
+                    <td class="letter" id="col4-let9">1</td>
+                    <td class="letter" id="col4-let10">1</td>
+                    <td class="letter" id="col4-let11">1</td>
+                    <td class="letter" id="col4-let12">1</td>
+                    <td class="letter" id="col4-let13">1</td>
+                    <td class="letter" id="col4-let14">1</td>
+                    <td class="letter" id="col4-let15">1</td>
+                    <td class="letter" id="col4-let16">1</td>
+                    <td class="letter" id="col4-let17">1</td>
+                    <td class="letter" id="col4-let18">1</td>
+                    <td class="letter" id="col4-let19">1</td>
+                    <td class="letter" id="col4-let20">1</td>
+                    <td class="letter" id="col4-let21">1</td>
+                    <td class="letter" id="col4-let22">1</td>
+                    <td class="letter" id="col4-let23">1</td>
+                    <td class="letter" id="col4-let24">1</td>
+                    <td class="letter" id="col4-let25">1</td>
+                    <td class="letter" id="col4-let26">1</td>
+                    <td class="letter" id="col4-let27">1</td>
+                    <td class="letter" id="col4-let28">1</td>
+                    <td class="letter" id="col4-let29">1</td>
+                    <td class="letter" id="col4-let30">1</td>
+                    <td class="letter" id="col4-let31">1</td>
+                    <td class="letter" id="col4-let32">1</td>
+                    <td class="letter" id="col4-let33">1</td>
+                    <td class="letter" id="col4-let34">1</td>
+                    <td class="letter" id="col4-let35">1</td>
+                    <td class="letter" id="col4-let36">1</td>
+                    <td class="letter" id="col4-let37">1</td>
+                    <td class="letter" id="col4-let38">1</td>
+                    <td class="letter" id="col4-let39">1</td>
+                    <td class="letter" id="col4-let40">1</td> -->
+                <!-- <td class="letter" id="col4-let41">1</td>
+                    <td class="letter" id="col4-let42">1</td>
+                    <td class="letter" id="col4-let43">1</td>
+                    <td class="letter" id="col4-let44">1</td>
+                    <td class="letter" id="col4-let45">1</td>
+                    <td class="letter" id="col4-let46">1</td>
+                    <td class="letter" id="col4-let47">1</td>
+                    <td class="letter" id="col4-let48">1</td>
+                    <td class="letter" id="col4-let49">1</td>
+                    <td class="letter" id="col4-let50">1</td> -->
+                <!-- </tr>
+
+                <tr class="input-row-5">
+                    <td class="letter" id="col2-let2">1</td>
+                    <td class="letter" id="col2-let1">1</td>
+                    <td class="letter" id="col2-let3">1</td>
+                    <td class="letter" id="col2-let4">1</td>
+                    <td class="letter" id="col2-let5">1</td>
+                    <td class="letter" id="col2-let6">1</td>
+                    <td class="letter" id="col2-let7">1</td>
+                    <td class="letter" id="col2-let8">1</td>
+                    <td class="letter" id="col2-let9">1</td>
+                    <td class="letter" id="col2-let10">1</td>
+                    <td class="letter" id="col2-let11">1</td>
+                    <td class="letter" id="col2-let12">1</td>
+                    <td class="letter" id="col2-let13">1</td>
+                    <td class="letter" id="col2-let14">1</td>
+                    <td class="letter" id="col2-let15">1</td>
+                    <td class="letter" id="col2-let16">1</td>
+                    <td class="letter" id="col2-let17">1</td>
+                    <td class="letter" id="col2-let18">1</td>
+                    <td class="letter" id="col2-let19">1</td>
+                    <td class="letter" id="col2-let20">1</td>
+                    <td class="letter" id="col2-let21">1</td>
+                    <td class="letter" id="col2-let22">1</td>
+                    <td class="letter" id="col2-let23">1</td>
+                    <td class="letter" id="col2-let24">1</td>
+                    <td class="letter" id="col2-let25">1</td>
+                    <td class="letter" id="col2-let26">1</td>
+                    <td class="letter" id="col2-let27">1</td>
+                    <td class="letter" id="col2-let28">1</td>
+                    <td class="letter" id="col2-let29">1</td>
+                    <td class="letter" id="col2-let30">1</td>
+                    <td class="letter" id="col2-let31">1</td>
+                    <td class="letter" id="col2-let32">1</td>
+                    <td class="letter" id="col2-let33">1</td>
+                    <td class="letter" id="col2-let34">1</td>
+                    <td class="letter" id="col2-let35">1</td>
+                    <td class="letter" id="col2-let36">1</td>
+                    <td class="letter" id="col2-let37">1</td>
+                    <td class="letter" id="col2-let38">1</td>
+                    <td class="letter" id="col2-let39">1</td>
+                    <td class="letter" id="col2-let40">1</td> -->
+                <!-- <td class="letter" id="col2-let41">1</td>
+                    <td class="letter" id="col2-let42">1</td>
+                    <td class="letter" id="col2-let43">1</td>
+                    <td class="letter" id="col2-let44">1</td>
+                    <td class="letter" id="col2-let45">1</td>
+                    <td class="letter" id="col2-let46">1</td>
+                    <td class="letter" id="col2-let47">1</td>
+                    <td class="letter" id="col2-let48">1</td>
+                    <td class="letter" id="col2-let49">1</td>
+                    <td class="letter" id="col2-let50">1</td> -->
+                <!-- </tr> -->
+            </table>
+        </div>
+
+    </div>
+
+
+    <div id="keyboard" class="hide-item">
+        <div class="key-row" id="row-1">
+            <div class="key-box" id="Backquote">
+                <div class="key key-letter">
+                    <p class="shift-text">~</p>
+                    <p class="normal-text">`</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit1">
+                <div class="key key-letter">
+                    <p class="shift-text">!</p>
+                    <p class="normal-text">1</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit2">
+                <div class="key key-letter">
+                    <p class="shift-text">@</p>
+                    <p class="normal-text">2</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit3">
+                <div class="key key-letter">
+                    <p class="shift-text">#</p>
+                    <p class="normal-text">3</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit4">
+                <div class="key key-letter">
+                    <p class="shift-text">$</p>
+                    <p class="normal-text">4</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit5">
+                <div class="key key-letter">
+                    <p class="shift-text">%</p>
+                    <p class="normal-text">5</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit6">
+                <div class="key key-letter">
+                    <p class="shift-text">^</p>
+                    <p class="normal-text">6</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit7">
+                <div class="key key-letter">
+                    <p class="shift-text">&</p>
+                    <p class="normal-text">7</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit8">
+                <div class="key key-letter">
+                    <p class="shift-text">*</p>
+                    <p class="normal-text">8</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit9">
+                <div class="key key-letter">
+                    <p class="shift-text">(</p>
+                    <p class="normal-text">9</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Digit0">
+                <div class="key key-letter">
+                    <p class="shift-text">)</p>
+                    <p class="normal-text">0</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Minus">
+                <div class="key key-letter">
+                    <p class="shift-text">_</p>
+                    <p class="normal-text">-</p>
+                </div>
+            </div>
+            <div class="key-box" id="Equal">
+                <div class="key key-letter">
+                    <p class="shift-text">+</p>
+                    <p class="normal-text">=</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Backspace">
+                <div class="key key-back-space">
+                    <p class="key-text">←</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="key-row" id="row-2">
+
+            <div class="key-box" id="Tab">
+                <div class="key key-tab">
+                    <p class="key-text" style="font-size: small;">TAB</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyQ">
+                <div class="key key-letter">
+                    <p class="key-text">Q</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyW">
+                <div class="key key-letter">
+                    <p class="key-text">W</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyE">
+                <div class="key key-letter">
+                    <p class="key-text">E</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyR">
+                <div class="key key-letter">
+                    <p class="key-text">R</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyT">
+                <div class="key key-letter">
+                    <p class="key-text">T</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyY">
+                <div class="key key-letter">
+                    <p class="key-text">Y</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyU">
+                <div class="key key-letter">
+                    <p class="key-text">U</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyI">
+                <div class="key key-letter">
+                    <p class="key-text">I</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyO">
+                <div class="key key-letter">
+                    <p class="key-text">O</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyP">
+                <div class="key key-letter">
+                    <p class="key-text">P</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="BracketLeft">
+                <div class="key key-letter">
+                    <p class="shift-text">{</p>
+                    <p class="normal-text">[</p>
+                </div>
+            </div>
+            <div class="key-box" id="BracketRight">
+                <div class="key key-letter">
+                    <p class="shift-text">}</p>
+                    <p class="normal-text">]</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Backslash">
+                <div class="key key-back-slash">
+                    <p class="shift-text">|</p>
+                    <p class="normal-text">\</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="key-row" id="row-3">
+
+            <div class="key-box" id="CapsLock">
+                <div class="key key-caps">
+                    <p class="key-text" style="font-size: small;">CAPS LOCK</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyA">
+                <div class="key key-letter">
+                    <p class="key-text">A</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyS">
+                <div class="key key-letter">
+                    <p class="key-text">S</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyD">
+                <div class="key key-letter">
+                    <p class="key-text">D</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyF">
+                <div class="key key-letter">
+                    <p class="key-text">F</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyG">
+                <div class="key key-letter">
+                    <p class="key-text">G</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyH">
+                <div class="key key-letter">
+                    <p class="key-text">H</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyJ">
+                <div class="key key-letter">
+                    <p class="key-text">J</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyK">
+                <div class="key key-letter">
+                    <p class="key-text">K</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyL">
+                <div class="key key-letter">
+                    <p class="key-text">L</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Semicolon">
+                <div class="key key-letter">
+                    <p class="shift-text">:</p>
+                    <p class="normal-text">;</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Quote">
+                <div class="key key-letter">
+                    <p class="shift-text">"</p>
+                    <p class="normal-text">'</p>
+                </div>
+            </div>
+            <div class="key-box" id="Enter">
+                <div class="key key-enter">
+                    <p class="key-text" style="font-size: small;">ENTER</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="key-row" id="row-3">
+
+            <div class="key-box" id="ShiftLeft">
+                <div class="key key-left-shift ">
+                    <p class="key-text" style="font-size: small;">SHIFT</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyZ">
+                <div class="key key-letter">
+                    <p class="key-text">Z</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyX">
+                <div class="key key-letter">
+                    <p class="key-text">X</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyC">
+                <div class="key key-letter">
+                    <p class="key-text">C</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyV">
+                <div class="key key-letter">
+                    <p class="key-text">V</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyB">
+                <div class="key key-letter">
+                    <p class="key-text">B</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyN">
+                <div class="key key-letter">
+                    <p class="key-text">N</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="KeyM">
+                <div class="key key-letter">
+                    <p class="key-text">M</p>
+                </div>
+            </div>
+
+
+            <div class="key-box" id="Comma">
+                <div class="key key-letter">
+                    <p class="shift-text">
+                        <</p>
+                            <p class="normal-text">,</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Period">
+                <div class="key key-letter">
+                    <p class="shift-text">
+                        ></p>
+                    <p class="normal-text">.</p>
+                </div>
+            </div>
+
+            <div class="key-box" id="Slash">
+                <div class="key key-letter">
+                    <p class="shift-text">?</p>
+                    <p class="normal-text">/</p>
+                </div>
+            </div>
+
+
+            <div class="key-box" id="ShiftRight">
+                <div class="key key-right-shift">
+                    <p class="key-text" style="font-size: small;">SHIFT</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="key-row" id="row-3">
+
+            <div class="key-box" id="Space">
+                <div class="key key-space">
+                    <p class="key-text" style="font-size: small;">_______</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <p class="credits">😎😎 Logo Credit goes to RACDR 😎😎</p>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

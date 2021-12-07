@@ -1,0 +1,156 @@
+    body {
+        background-color: rgb(146, 140, 137);
+    }
+    
+    #logo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #keyboard {
+        position: relative;
+        width: 1030px;
+        bottom: 200px;
+        /* bottom: 345px; */
+        /* left: 15%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #display {
+        position: relative;
+        bottom: 200px;
+        align-items: center;
+    }
+    
+    #input {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        font-size: 32px;
+        line-height: 1.6;
+        background-color: rgb(59, 59, 59);
+        color: white;
+    }
+    
+    #controls {
+        position: relative;
+        bottom: 200px;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hide-item {
+        display: none;
+    }
+    
+    .letter {
+        width: 25px;
+        height: 50px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .output-box {
+        bottom: 345px;
+    }
+    
+    .control-data {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        font-size: 1.2rem;
+    }
+    
+    .control-data-big {
+        font-size: 3.5rem;
+        padding-top: 27%;
+    }
+    
+    .control-data-small {
+        font-size: 1.5rem;
+    }
+    
+    .big-font {
+        animation: mymove1 1s normal;
+    }
+    
+    @keyframes mymove1 {
+        100% {
+            font-size: 3.5rem;
+            padding-top: 27%;
+        }
+    }
+    
+    .small-font {
+        animation: mymove 1s normal;
+    }
+    
+    @keyframes mymove {
+        100% {
+            font-size: 1.5rem;
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+    }
+    
+    #user-data {
+        /* padding-top: 250px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .controls {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .start-btn {
+        width: 180px;
+        height: 60px;
+        position: relative;
+        background-color: rgb(63, 70, 70);
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .start-btn:hover {
+        background-color: rgb(253, 255, 255);
+        color: rgb(36, 33, 33);
+    }
+    /* .hidden{
+    visibility: hidden;
+} */
+    
+    .curser {
+        color: #fff;
+        animation: blinkingBackground 1s infinite;
+    }
+    
+    @keyframes blinkingBackground {
+        0% {
+            background-color: rgb(59, 59, 59);
+            color: rgb(255, 255, 255);
+        }
+        50% {
+            background-color: #fffefe;
+            color: #000000;
+        }
+    }
+    
+    .credits {
+        position: relative;
+        bottom: 150px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }

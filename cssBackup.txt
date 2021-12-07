@@ -1,0 +1,365 @@
+    .key-text {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .shift-text {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        bottom: 15px;
+        right: 15px
+    }
+    
+    .normal-text {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        bottom: 27px;
+    }
+    
+    .key-row {
+        padding-left: 50px;
+        position: relative;
+        height: 70px;
+    }
+    
+    .key-box {
+        position: relative;
+    }
+    
+    .key {
+        position: relative;
+        background-color: rgb(63, 70, 70);
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-bottom-style: double;
+        border-bottom-width: 10px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        text-align: center;
+        margin: 10px;
+    }
+    /* .key:active {
+    border-bottom-width: 1px;
+    position: relative;
+    top: 9px;
+    margin-bottom: 19px;
+} */
+    
+    .keyPressed {
+        border-bottom-width: 1px;
+        position: relative;
+        top: 9px;
+        margin-bottom: 19px;
+    }
+    
+    .key-letter {
+        height: 55px;
+        width: 60px;
+    }
+    
+    .key-space {
+        height: 55px;
+        width: 380px;
+    }
+    
+    .key-left-shift {
+        height: 55px;
+        width: 140px;
+    }
+    
+    .key-right-shift {
+        height: 55px;
+        width: 160px;
+    }
+    
+    .key-back-slash {
+        height: 55px;
+        width: 70px;
+    }
+    
+    .key-caps {
+        height: 55px;
+        width: 110px;
+    }
+    
+    .key-enter {
+        height: 55px;
+        width: 120px;
+    }
+    
+    .key-tab {
+        height: 55px;
+        width: 90px;
+    }
+    
+    .key-back-space {
+        height: 55px;
+        width: 100px;
+    }
+    
+    #Digit1 {
+        bottom: 75px;
+        left: 70px;
+    }
+    
+    #Digit2 {
+        bottom: 151px;
+        left: 140px;
+    }
+    
+    #Digit3 {
+        bottom: 227px;
+        left: 210px;
+    }
+    
+    #Digit4 {
+        bottom: 303px;
+        left: 280px;
+    }
+    
+    #Digit5 {
+        bottom: 379px;
+        left: 350px;
+    }
+    
+    #Digit6 {
+        bottom: 455px;
+        left: 420px;
+    }
+    
+    #Digit7 {
+        bottom: 531px;
+        left: 490px;
+    }
+    
+    #Digit8 {
+        bottom: 607px;
+        left: 560px;
+    }
+    
+    #Digit9 {
+        bottom: 682px;
+        left: 630px;
+    }
+    
+    #Digit0 {
+        bottom: 758px;
+        left: 700px;
+    }
+    
+    #Minus {
+        bottom: 834px;
+        left: 770px;
+    }
+    
+    #Equal {
+        bottom: 910px;
+        left: 840px;
+    }
+    
+    #Backspace {
+        bottom: 985px;
+        left: 910px;
+    }
+    /* ================================= */
+    
+    #Tab {
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    #KeyQ {
+        bottom: 75px;
+        left: 100px;
+    }
+    
+    #KeyW {
+        bottom: 151px;
+        left: 170px;
+    }
+    
+    #KeyE {
+        bottom: 227px;
+        left: 240px;
+    }
+    
+    #KeyR {
+        bottom: 303px;
+        left: 310px;
+    }
+    
+    #KeyT {
+        bottom: 379px;
+        left: 380px;
+    }
+    
+    #KeyY {
+        bottom: 455px;
+        left: 450px;
+    }
+    
+    #KeyU {
+        bottom: 531px;
+        left: 520px;
+    }
+    
+    #KeyI {
+        bottom: 607px;
+        left: 590px;
+    }
+    
+    #KeyO {
+        bottom: 682px;
+        left: 660px;
+    }
+    
+    #KeyP {
+        bottom: 758px;
+        left: 730px;
+    }
+    
+    #BracketLeft {
+        bottom: 834px;
+        left: 800px;
+    }
+    
+    #BracketRight {
+        bottom: 910px;
+        left: 870px;
+    }
+    
+    #Backslash {
+        bottom: 985px;
+        left: 940px;
+    }
+    /* ================================= */
+    
+    #CapsLock {
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    #KeyA {
+        bottom: 75px;
+        left: 120px;
+    }
+    
+    #KeyS {
+        bottom: 151px;
+        left: 190px;
+    }
+    
+    #KeyD {
+        bottom: 227px;
+        left: 260px;
+    }
+    
+    #KeyF {
+        bottom: 303px;
+        left: 330px;
+    }
+    
+    #KeyG {
+        bottom: 379px;
+        left: 400px;
+    }
+    
+    #KeyH {
+        bottom: 455px;
+        left: 470px;
+    }
+    
+    #KeyJ {
+        bottom: 531px;
+        left: 540px;
+    }
+    
+    #KeyK {
+        bottom: 607px;
+        left: 610px;
+    }
+    
+    #KeyL {
+        bottom: 682px;
+        left: 680px;
+    }
+    
+    #Semicolon {
+        bottom: 758px;
+        left: 750px;
+    }
+    
+    #Quote {
+        bottom: 834px;
+        left: 820px;
+    }
+    
+    #Enter {
+        bottom: 910px;
+        left: 890px;
+    }
+    /* ================================= */
+    
+    #ShiftLeft {
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    #KeyZ {
+        bottom: 75px;
+        left: 150px;
+    }
+    
+    #KeyX {
+        bottom: 151px;
+        left: 220px;
+    }
+    
+    #KeyC {
+        bottom: 227px;
+        left: 290px;
+    }
+    
+    #KeyV {
+        bottom: 303px;
+        left: 360px;
+    }
+    
+    #KeyB {
+        bottom: 379px;
+        left: 430px;
+    }
+    
+    #KeyN {
+        bottom: 455px;
+        left: 500px;
+    }
+    
+    #KeyM {
+        bottom: 531px;
+        left: 570px;
+    }
+    
+    #Comma {
+        bottom: 607px;
+        left: 640px;
+    }
+    
+    #Period {
+        bottom: 682px;
+        left: 710px;
+    }
+    
+    #Slash {
+        bottom: 758px;
+        left: 780px;
+    }
+    
+    #ShiftRight {
+        bottom: 834px;
+        left: 850px;
+    }
+    
+    #Space {
+        left: 290px;
+    }
